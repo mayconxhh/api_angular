@@ -1,0 +1,40 @@
+<div class="header">
+	<div class="container">
+		<div class="row">
+			<h1 class="col-xs-12">Crea tu personajes Anime :3</h1>
+		</div>
+	</div>
+</div>
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<form ng-submit="updateCharacter()">
+				<div class="col-xs-12 col-ms-6 col-md-4 col-md-offset-4 form-group">
+					<label for="url">Imagen</label>
+					<input class="form-control" name="url" type="url" ng-model="newCharacter.photo" placeholder="Link de personaje" value="{{personaje.photo}}">
+				</div>
+				<div class="col-xs-12 col-ms-6 col-md-4 col-md-offset-4 form-group">
+					<label for="name">Nombre</label>
+					<input class="form-control" name="name" type="text" ng-model="newCharacter.name" placeholder="Nombre de imagen" value="{{personaje.name}}">
+				</div>
+				<div class="col-xs-12 col-ms-6 col-md-4 col-md-offset-4 form-group">
+					<label for="age">Edad</label>
+					<input class="form-control" name="age" type="number" ng-model="newCharacter.age" placeholder="Edad de personaje" value="{{personaje.age}}">
+				</div>
+				<div class="col-xs-12 col-ms-6 col-md-4 col-md-offset-4 form-group">
+					<label for="group">Grupo</label>
+					<input class="form-control" name="group" type="text" ng-model="newCharacter.group" placeholder="Grupo" value="{{personaje.group}}">
+				</div>
+				<div class="col-xs-12 col-ms-6 col-md-4 col-md-offset-4 form-group">
+					<label for="ocupaction">Ocupacíon</label>
+					<textarea class="form-control" name="ocupaction" ng-model="newCharacter.occupation" placeholder="Ocupacion o descripcion"
+					>{{personaje.occupation}}</textarea>
+				</div>
+				<div class="col-xs-12 col-ms-6 col-ms-offset-3 col-md-4 col-md-offset-4">
+					<input type="submit" class="btn btn-primary" value="Agregar Personaje">
+				</div>
+			</form>
+			<br>
+		</div>
+	</div>
+</div>

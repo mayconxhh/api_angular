@@ -1,0 +1,26 @@
+<div>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<h1 class="col-xs-12">Personajes Anime :3</h1>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="container">
+			<div class="row">
+				<div>
+					<figure>
+						<img class="img-responsive" src="{{personaje.photo}}" alt="{{personaje.name}}">
+					</figure>
+					<h3>{{personaje.name}}</h3>
+					<p><span>Edad:</span> {{personaje.age}}</p>
+					<p><span>Grupo:</span> {{personaje.group}}</p>
+					<p><span>Ocupacion:</span> {{personaje.occupation}}</p>
+					<a href="#/update/{{personaje._id}}" class="btn btn-default">Editar</a>
+					<a href="#/delete/{{personaje._id}}" class="btn btn-default">Eliminar</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
