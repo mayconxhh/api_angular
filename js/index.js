@@ -14,7 +14,7 @@ myApp.config(function($routeProvider){
 			templateUrl: 'template/personaje.html'
 		})
 		.when('/update/:id',{
-			controller4: 'controlador4',
+			controller: 'controlador4',
 			templateUrl: 'template/actualizar.html'
 		})
 		.otherwise('/');

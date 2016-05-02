@@ -9,7 +9,7 @@
 	<div class="content">
 		<div class="container">
 			<div class="row">
-				<div>
+				<div class="col-xs-12 col-ms-6 col-ms-offset-3 col-md-4 col-md-offset-4 margin-top">
 					<figure>
 						<img class="img-responsive" src="{{personaje.photo}}" alt="{{personaje.name}}">
 					</figure>
@@ -18,7 +18,7 @@
 					<p><span>Grupo:</span> {{personaje.group}}</p>
 					<p><span>Ocupacion:</span> {{personaje.occupation}}</p>
 					<a href="#/update/{{personaje._id}}" class="btn btn-default">Editar</a>
-					<a href="#/delete/{{personaje._id}}" class="btn btn-default">Eliminar</a>
+					<a ng-click="deleteCharacter()" class="btn btn-default">Eliminar</a>
 				</div>
 			</div>
 		</div>

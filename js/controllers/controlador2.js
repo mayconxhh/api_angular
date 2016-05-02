@@ -1,4 +1,4 @@
-myApp.controller('controlador2', ['$scope', '$http', function($scope, $http){
+myApp.controller('controlador2', ['$scope', '$http', '$location', function($scope, $http, $location){
 	$scope.addNewCharacter = function(){
 		console.log('Hola mama');
 		var data = {
@@ -13,12 +13,12 @@ myApp.controller('controlador2', ['$scope', '$http', function($scope, $http){
 			method: 'POST',
 			data: data,
 			url: 'http://apipersonajes.herokuapp.com/api/personaje'
-		}).then(function(res){
-		
-			$scope.newCharacter = {}
-		
+		}).then(function(res){		
+			console.log(res);		
 		},function(err){
 			console.log(err);
 		})
+
+		$location.url('/')
 	}
 }]);
